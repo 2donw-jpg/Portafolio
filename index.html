@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<link href="styles.css" rel="stylesheet">
+	<link href="win-icons.min.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+	<title>Portafolio</title>
+</head>
+<body>
+
+
+    
+	<div class="ui-desktop">
+		<div class="recycle-bin ui-icon">
+			<div class="ui-icon-container">
+				<img width="40" height="40" src="png/recycle_bin_empty-2.png">
+				<span style="color:white;">Recycle Bin</span>
+			</div>
+		</div>
+		<div class="recycle-bin ui-icon" onclick="toggleVisibility('home')" data-window-title="Home" data-window-content="This is the Home section">
+            <div class="ui-icon-container">
+                <img width="40" height="40" src="ico/computer_explorer.ico">
+                <span style="color:white;">Home</span>
+            </div>
+        </div>
+        <div class="recycle-bin ui-icon" onclick="toggleVisibility('projects')" data-window-title="Projects" data-window-content="This is the Projects section">
+            <div class="ui-icon-container">
+                <img width="40" height="40" src="ico/directory_folder_options.ico">
+                <span style="color:white;">Projects</span>
+            </div>
+        </div>
+        <div class="recycle-bin ui-icon" onclick="toggleVisibility('skills')" data-window-title="Skills" data-window-content="This is the Skills section">
+            <div class="ui-icon-container">
+                <img width="40" height="40" src="ico/certificate_checklist.ico">
+                <span style="color:white;">Skills</span>
+            </div>
+        </div>
+        <div class="recycle-bin ui-icon">
+            <div class="ui-icon-container">
+                <img width="40" height="40" src="ico/game_mine_1.ico">
+                <span style="color:white;">Minesweeper</span>
+            </div>
+        </div>
+	
+	</div>
+
+<div id="home" class="windows-container js-windows-container hidden">
+    <div class="form windows js-windows windows-form" id="form">
+        <header class="js-winheader windows-header" style="padding-right:3px;">
+            <span>Home</span>
+            <button class="windows-button" style="padding:0; height:16px;width:16px;position:relative;">
+                <img src="png/close-icon.png" style="position:absolute;left:1px;top:0px;">
+            </button>
+            <button class="windows-button" style="padding:0; height:16px;width:16px;position:relative;margin-right:3px;">
+                <img src="png/question-icon.png" style="position:absolute;left:1px;top:0px;">
+            </button>
+        </header>
+        <div class="form-content" style="height:100%;">
+            <div class="icon-wrap">
+                <div class="icon-outer-container">			
+                    <div class="icon-inner-container" style="padding:20px; text-align:center;">
+                        <!-- Hero Section -->
+                        <section class="hero">
+                            <h1>Welcome to My Portfolio</h1>
+                            <p>Hi, I'm [Your Name], a [Your Profession].</p>
+                            <p>Explore my work and get to know more about my skills and experiences.</p>
+                            <a href="#about-me" class="btn-primary">Learn More</a>
+                        </section>
+                        
+                        <!-- About Me Preview -->
+                        <section class="about-preview">
+                            <h2>About Me</h2>
+                            <p>Brief overview of who you are and what you do. This could include your professional background, key skills, and passions.</p>
+                            <a href="#about-me" class="btn-secondary">Read More</a>
+                        </section>
+                        
+                        <!-- Latest Projects -->
+                        <section class="latest-projects">
+                            <h2>Latest Projects</h2>
+                            <div class="projects-grid">
+                                <!-- Example Project Item -->
+                                <div class="project-item">
+                                    <img src="path/to/project-image.jpg" alt="Project Image">
+                                    <h3>Project Title</h3>
+                                    <p>A short description of the project.</p>
+                                    <a href="#projects" class="btn-secondary">View Project</a>
+                                </div>
+                                <!-- Add more project items as needed -->
+                            </div>
+                        </section>
+                        
+                        <!-- Contact Information -->
+                        <section class="contact-info">
+                            <h2>Contact Me</h2>
+                            <p>If you want to get in touch, feel free to reach out via email or social media.</p>
+                            <a href="mailto:you@example.com" class="btn-secondary">Email Me</a>
+                            <!-- Add social media links here -->
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="projects" class="windows-container js-windows-container" style="position:relative; margin: 0px auto;">
+    <div class="form windows js-windows windows-form" id="form">
+        <header class="js-winheader windows-header">
+            <span>Projects</span>
+            <button class="windows-button" style="padding:0; height:16px;width:16px;"><img src="png/close-icon.png"></button>
+            <button class="windows-button" style="padding:0; height:16px;width:16px; margin-right:3px;"><img src="png/question-icon.png"></button>
+        </header>
+        <div class="form-content" style="height:100%;">
+            <div class="icon-wrap">
+                <div class="icon-outer-container">
+                    <div class="icon-inner-container" style="padding:20px; text-align:center;">
+
+                        
+                        <!-- Projects Overview -->
+                        <section class="projects-overview">
+                            <h1>My Projects</h1>
+                            <p>Here is a list of my projects created on my 3 months web design class</p>
+                        </section>
+                        
+                        <div class="projects-list">
+                            <div class="project-item">
+                              <div class="project-content">
+                                <h2>Monster Hunter World Webpage</h2>
+                                <div class="project-description">
+                                  <p>A monster hunter world monsters webpage, it shows the usage of grid and sections, the ability of designing a card container and some css styles such as drop shadow</p>
+                                </div>
+                                <a href="https://2donw-jpg.github.io/MHW-webpage/monstruos_grandes.html" target="_blank" class="project-btn">View Project</a>
+                              </div>
+                              <img src="png/p1.png" alt="Project Image" class="project-image" onclick="openModal('png/p1.png')">
+                            </div>
+                        
+                            <div class="project-item">
+                              <div class="project-content">
+                                <h2>Clumpy Cat Bakery Website</h2>
+                                <div class="project-description">
+                                  <p>An online bakery store where you can see the items they have on sale, I had to use a template so I could understand how to read other dev's work</p>
+                                </div>
+                                <a href="https://2donw-jpg.github.io/clumpsy-cat/" target="_blank" class="project-btn">View Project</a>
+                              </div>
+                              <img src="png/p2.png" alt="Project Image" class="project-image" onclick="openModal('png/p2.png')">
+                            </div>
+                        
+                            <div class="project-item">
+                              <div class="project-content">
+                                <h2>WooCommerce Website</h2>
+                                <div class="project-description">
+                                  <p>A localhost wordpress website, functional with WooCommerce. I was able to create a functional website in minutes thanks to the plugin. Sadly this is local so there is no link to it yet</p>
+                                </div>
+                              </div>
+                              <img src="png/p3.png" alt="Project Image" class="project-image" onclick="openModal('png/p3.png')">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="skills" class="windows-container js-windows-container hidden">
+        <div class="form windows js-windows windows-form" id="form">
+            <header class="js-winheader windows-header" style="padding-right:3px;">
+                <span>Skills</span>
+                <button class="windows-button" style="padding:0; height:16px;width:16px;position:relative;">
+                    <img src="png/close-icon.png" style="position:absolute;left:1px;top:0px;">
+                </button>
+                <button class="windows-button" style="padding:0; height:16px;width:16px;position:relative;margin-right:3px;">
+                    <img src="png/question-icon.png" style="position:absolute;left:1px;top:0px;">
+                </button>
+            </header>
+            <div class="form-content" style="height:100%;">
+                <div class="icon-wrap">
+                    <div class="icon-outer-container">
+                        <div class="icon-inner-container" style="padding:20px; text-align:center;">
+                            <!-- Skills Overview -->
+                            <section class="skills-overview">
+                                <h1>My Skills</h1>
+                                <p>Here is a list of my core skills and expertise areas that I use to deliver high-quality results.</p>
+                            </section>
+                            
+                            <!-- Skills List -->
+                            <section class="skills-list">
+                                <div class="skill-item">
+                                    <h2>Project Management</h2>
+                                    <p>Skilled in managing projects using Agile methodologies and tools like Jira and Trello.</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="skill-item">
+                                    <h2>UI/UX Design</h2>
+                                    <p>Experienced in creating user-friendly designs and wireframes using tools like Figma and Adobe XD.</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <h2>Database Structures</h2>
+                                    <p>Experienced in relational database designs using MySQL</p>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h2>General Programming Knowledge</h2>
+                                    <p>I know a bit of everything, started with Java, then Python, C# and currently learning JavaScript</p>
+                                </div>
+                                
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="start-bar">
+		<a href="" title="Start Menu" class="button start-button-wrapper js-start-button">
+			<div class="start-button">
+                <img width="16" height="16" src="ico/windows.ico">
+                <span>Start</span>
+            </div>
+		</a>
+		<span id="opened-app" class="start-bar-window"><div class="sprite gallery"></div>Home</span>
+	</div>
+
+    
+
+</body>
+</html>
